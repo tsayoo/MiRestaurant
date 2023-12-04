@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+:root {
+  /* --bg-color: #952323; */
+  --bg-color: #efb495;
+  --bg-color-second: #ffbfbf;
+  --text-color: #101a24;
+  --text-color-second: #fff;
+  --btn-oren: #ea6d27;
+  --font-judul: "David Libre", serif;
+  --font-isi: "inter", sans-serif;
+}
+body {
+  background: var(--bg-color);
+}
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  /* margin-top: 6px; */
+  width: 160px;
+}
+.navbar {
+  margin-top: 32px;
+}
+.navbar a {
+  margin-right: 45px;
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-family: inter;
+  font-size: 16px;
+  /* font-style: normal; */
+  font-weight: 400;
+  line-height: 29px;
+}
+.btn-oren {
+  background-color: var(--btn-oren);
+  margin-top: 15px;
+  color: var(--text-color-second);
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding: 10px 15px; */
+  font-weight: 500;
+  line-height: 29px;
+  border-radius: 15px 0;
+  margin-bottom: 100px;
+}
+.hero {
+  padding: 30px 100px;
+  display: flex;
+}
+.hero .left {
+  margin-top: 270px;
+  margin-right: 150px;
+  margin-bottom: 150px;
+}
+.hero .left h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px; /* 102.857% */
+}
+.hero .left p {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  margin-top: 69px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+.btn-hero {
+  margin-top: 49px;
+  margin-bottom: 60px;
+}
+.menu {
+  color: #ffff;
+  background-color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  border-radius: 15px 0;
+}
+.book {
+  color: #ffff;
+  background-color: var(--btn-oren);
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  border-radius: 15px 0;
+}
+.social-media a {
+  display: inline-flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: transparent;
+  border: 1px solid var(--text-color);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--text-color);
+}
+.right {
+  /* margin-top: 196px; */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.dish {
+  padding: 30px 100px;
+  background: var(--bg-color-second);
+}
+.dish h1 {
+  text-align: center;
+  color: var(--text-color);
+  /* text-align: center; <keikut karna copy dari figma */
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 108.333% */
+  margin-top: 60px;
+}
+.dish .keterangan {
+  margin-top: 21px;
+  /* color: var(--text-color-second); */
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+.dish-menu {
+  display: flex;
+  margin-top: 116px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.dish-menu .dish-card {
+  background: none;
+  border: 2px solid var(--bg-color);
+  padding: 1.5rem 2rem 51px;
+  border-radius: 20px 0;
+  transition: 3 ease;
+  text-align: center;
+}
+.dish-menu .dish-card:hover {
+  background: var(--bg-color);
+  transform: scale(1.08);
+}
+.dish-menu .dish-card img {
+  margin-bottom: 15px;
+}
+.dish-menu .dish-card h3 {
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-judul);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+}
+.dish-menu .dish-card p {
+  margin-top: 21px;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 173.333% */
+}
+.welcome {
+  padding: 30px 100px 100px;
+  background: var(--bg-color-second);
+  display: flex;
+}
+.welcome img {
+  margin-top: 130px;
+  width: 519px;
+  height: 467px;
+}
+.content {
+  margin-top: 280px;
+  margin-left: 37px;
+}
+.content h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 108.333% */
+  margin-bottom: 20px;
+}
+.content p {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 15px;
+}
+/* chef section */
+.chef {
+  display: flex;
+  padding: 100px 100px;
+  align-items: center;
+}
+.expertChef {
+  margin-top: 100px;
+}
+.expertChef h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 108.333% */
+  margin-bottom: 18px;
+}
+.ChefDesk {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 25px;
+}
+.skillChef {
+  display: flex;
+}
+.point {
+  display: flex;
+  margin-bottom: 33px;
+  margin-left: 10px;
+}
+.point img {
+  width: 23.802px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.point p {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 140% */
+}
+.customers {
+  padding: 50px 100px;
+  background: var(--bg-color-second);
+}
+.customers h1 {
+  justify-content: center;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 108.333% */
+}
+.customers .CustomersDesk {
+  margin-top: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 376px;
+  height: 56px;
+  flex-shrink: 0;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+.customers .WrapCard {
+  display: flex;
+  margin-top: 50px;
+  gap: 100px;
+}
+.CardCustomers {
+  background: var(--bg-color);
+  text-align: center;
+  padding: 25px 30px;
+  border-radius: 80px 20px;
+}
+.IMGCUSTOMERS {
+  margin-bottom: 15px;
+}
+.ComentCust {
+  margin-top: 10px;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+.NamaCust {
+  margin-top: 16px;
+  color: var(--text-color);
+  /* text-align: center; */
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 181.25% */
+}
+.jabatanCust {
+  color: #5c6574;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 193.333% */
+}
+.footer {
+  padding: 100px 100px;
+}
+
+.atas {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.address img {
+  /* margin-bottom: 21px; */
+  width: 180px;
+}
+.address .add {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  width: 408px;
+  height: 90px;
+}
+.open {
+  margin-top: 10px;
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 333.333% */
+  /* text-transform: uppercase; ini untuk klo hurufnya kecil besar(untuk mengkapitalkan) */
+}
+.hours {
+  display: flex;
+  margin-right: 10px;
+}
+.day {
+  margin-right: 10px;
+  color: var(--text-color);
+  /* color: #5C6574; */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+.navigafooter {
+  display: flex;
+  flex-direction: column;
+}
+.TitFoo {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 333.333% */
+  text-transform: uppercase;
+}
+.navigafooter a {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+}
+.Dishfooter {
+  display: flex;
+  flex-direction: column;
+}
+.Dishfooter a {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+}
+.sosmedfooter a {
+  display: inline-flex;
+  /* margin-right: 10px; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  background: transparent;
+  border: 1px solid var(--text-color);
+  padding: 7px;
+  border-radius: 50%;
+  color: var(--text-color);
+}
+.bawah {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.bawah p {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+.privacy {
+  display: flex;
+  gap: 10px;
+}
